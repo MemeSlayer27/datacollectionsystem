@@ -23,10 +23,7 @@ class _QuestionListState extends State<QuestionList> {
 
   @override
   Widget build(BuildContext context) {
-    return ListView.separated(
-      separatorBuilder: (context, index) => const Center(
-        child: SizedBox(),
-      ),
+    return ListView.builder(
       padding: const EdgeInsets.all(20.0),
       itemCount: questionWidgets.length,
       itemBuilder: (context, index) {
