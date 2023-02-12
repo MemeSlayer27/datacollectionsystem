@@ -3,10 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:daily_query/query.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-/// TODO: Make the following widget have two modes. Stasis and edit. Stasis just
-/// shows the question, type, can be expanded to show the description, and a button
-/// for editing. Edit then makes the title a textfield, makes the type text into
-/// a dropdown button, a toggle button for making it inactive and
+
 class QuestionWidget extends StatefulWidget {
   const QuestionWidget({
     Key? key,
@@ -24,7 +21,6 @@ class QuestionWidget extends StatefulWidget {
 
 class _QuestionWidgetState extends State<QuestionWidget> {
   String currentType = "";
-  // TODO: when a new on is created it will be in true. Figure this out. Think I got it.
 
   @override
   void initState() {
